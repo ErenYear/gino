@@ -629,7 +629,7 @@ class GinoEngine:
     :class:`.GinoConnection`."""
 
     def __init__(
-        self, dialect, pool, loop, logging_name=None, echo=None, execution_options=None
+        self, dialect, pool, loop, logging_name=None, echo=False, execution_options=None
     ):
         self._sa_engine = _SAEngine(
             dialect,
